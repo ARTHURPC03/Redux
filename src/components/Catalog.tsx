@@ -27,7 +27,7 @@ const Catalog: React.FC = () => {
         <strong>{product.title}</strong>
         <span>{product.price}</span>
         
-        <button type="button" onClick={() => handleAddProductToCart(product)} >Comprar</button>
+        <button type="button" onClick={() => handleAddProductToCart(product)}>Comprar</button>
       </article>
     ))}
     </main>
