@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 import { Provider } from 'react-redux'
 
-import store from './store';
-import Catalog from './components/Catalog';
-import Cart from './components/Cart';
+import store from './store'
+import Catalog from './components/Catalog'
+import Cart from './components/Cart'
 
-function App() {
+const App: React.FC = () => {
   return (
-    <Provider store={store} >
+    <Provider store={store}>
       <Catalog />
       <Cart />
     </Provider>
-  );
+  )
 }
 
-export default App;
+export default App
