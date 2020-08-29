@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
 import { IProduct } from '../store/modules/cart/types'
 import api from '../services/api'
 import CatalogItem from './CatalogItem'

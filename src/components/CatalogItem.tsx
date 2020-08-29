@@ -15,6 +15,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({
   const handleAddProductToCart = useCallback(() => {
     dispatch(addProductToCart(product))
   }, [dispatch, product])
+
   return (
     <article>
       <strong>{product.title}</strong>
