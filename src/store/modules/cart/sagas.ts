@@ -11,7 +11,7 @@ import { ActionTypes } from './types'
 
 type checkProductStockRequest = ReturnType<typeof addProductToCartRequest>
 
-interface IStockeResponse {
+interface IStockResponse {
   id: number
   quantity: number
 }
@@ -26,7 +26,7 @@ function* checkProductStock({ payload }: checkProductStockRequest) {
     )
   })
 
-  const availableStockResponse: AxiosResponse<IStockeResponse> = yield call(
+  const availableStockResponse: AxiosResponse<IStockResponse> = yield call(
     api.get,
     `stock/${product.id}`,
   )
